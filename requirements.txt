@@ -1,0 +1,8 @@
+streamlit>=1.67
+pandas>=3.1
+numpy>=2.5
+requests>=2.34
+plotly>=7.1
+anthropic>=2.8
+python-dotenv>=1.2
+pytest>=8.0
