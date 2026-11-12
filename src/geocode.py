@@ -12,10 +12,10 @@ import logging
 import time
 
 import pandas as pd
-import requests
 
 from src import config
 from src.cache import load_json, save_json
+from src.http_client import get_json
 
 logger = logging.getLogger(__name__)
 
@@ -23,37 +23,18 @@ logger = logging.getLogger(__name__)
 def fetch_coordinates(query: str) -> dict | None:
     """Ask Nominatim for the best match to ``query``.
 
-    Retries on timeouts and server errors. Returns a dict with ``lat``,
-    ``lon`` and ``display_name``, or ``None`` if nothing matched or every
-    attempt failed.
+    Returns a dict with ``lat``, ``lon`` and ``display_name``, or ``None``
+    if nothing matched or the request failed after retries.
     """
-    params = {"q": query, "format": "json", "limit": 1}
-    headers = {"User-Agent": config.USER_AGENT}
-
-    for attempt in range(1, config.MAX_RETRIES + 1):
-        try:
-            response = requests.get(
-                config.NOMINATIM_URL,
-                params=params,
-                headers=headers,
-                timeout=config.REQUEST_TIMEOUT_SECONDS,
-            )
-            response.raise_for_status()
-            matches = response.json()
-            if not matches:
-                return None
-            best = matches[0]
-            return {
-                "lat": float(best["lat"]),
-                "lon": float(best["lon"]),
-                "display_name": best["display_name"],
-            }
-        except requests.RequestException as error:
-            logger.warning("Attempt %d/%d failed for %r: %s", attempt, config.MAX_RETRIES, query, error)
-            # Wait longer after each failure (2s, 4s, ...) before retrying.
-            time.sleep(2 * attempt)
-
-    return None
+    matches = get_json(config.NOMINATIM_URL, {"q": query, "format": "json", "limit": 1})
+    if not matches:
+        return None
+    best = matches[0]
+    return {
+        "lat": float(best["lat"]),
+        "lon": float(best["lon"]),
+        "display_name": best["display_name"],
+    }
 
 
 def is_within_state(lat: float, lon: float, state: str) -> bool:

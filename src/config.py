@@ -14,6 +14,7 @@ CACHE_DIR = DATA_DIR / "cache"
 
 RESORTS_CSV = DATA_DIR / "resorts.csv"
 GEOCODE_CACHE = CACHE_DIR / "geocodes.json"
+ELEVATION_CACHE = CACHE_DIR / "elevation.json"
 
 # --- HTTP ------------------------------------------------------------------
 
@@ -33,3 +34,11 @@ STATE_BOUNDS = {
     "CO": (36.9, 41.1, -109.1, -102.0),
     "UT": (36.9, 42.1, -114.1, -109.0),
 }
+
+# --- Open-Meteo (elevation and weather) ------------------------------------
+
+ELEVATION_URL = "https://api.open-meteo.com/v1/elevation"
+
+# Every resort in the seed file has a base above this. A geocoded point
+# below it probably landed in a valley town instead of at the resort.
+MIN_RESORT_ELEVATION_M = 1800
