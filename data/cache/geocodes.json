@@ -1,0 +1,117 @@
+{
+  "Vail Ski Resort, Colorado": {
+    "lat": 39.5995318,
+    "lon": -106.3394563,
+    "display_name": "Vail, Eagle County, Colorado, 81657, United States"
+  },
+  "Beaver Creek Resort, Colorado": {
+    "lat": 39.5946527,
+    "lon": -106.5254355,
+    "display_name": "Beaver Creek Resort, Eagle County, Beaver Creek, Colorado, 81620, United States"
+  },
+  "Peak 8, Breckenridge, Colorado": {
+    "lat": 39.481215,
+    "lon": -106.0667602,
+    "display_name": "Peak 8, Ski Hill Road, Breckenridge, Summit County, Colorado, 80242, United States"
+  },
+  "Keystone Resort, Colorado": {
+    "lat": 39.6046192,
+    "lon": -105.9538216,
+    "display_name": "Keystone Resort, West Keystone Road, Keystone, Summit County, Colorado, 80435, United States"
+  },
+  "Crested Butte Mountain Resort, Colorado": {
+    "lat": 38.8970023,
+    "lon": -106.9446829,
+    "display_name": "Crested Butte Mountain Resort, Mount Crested Butte, Gunnison County, Colorado, United States"
+  },
+  "Telluride Ski Resort, Colorado": {
+    "lat": 37.9361867,
+    "lon": -107.8451282,
+    "display_name": "Telluride Ski Resort, No Brainer, Mountain Village, San Miguel County, Colorado, 81435, United States"
+  },
+  "Copper Mountain Resort, Colorado": {
+    "lat": 39.4994186,
+    "lon": -106.156329,
+    "display_name": "Copper Mountain Resort, New Old Road, Copper Mountain, Summit County, Colorado, United States"
+  },
+  "Arapahoe Basin Ski Area, Colorado": {
+    "lat": 39.6418691,
+    "lon": -105.8720505,
+    "display_name": "Arapahoe Basin Ski Area, 28194, US 6, Keystone, Summit County, Colorado, 80435, United States"
+  },
+  "Winter Park Resort, Colorado": {
+    "lat": 39.8716143,
+    "lon": -105.7827088,
+    "display_name": "Winter Park Resort, Winter Park, Grand County, Colorado, United States"
+  },
+  "Steamboat Ski Resort, Colorado": {
+    "lat": 40.4561011,
+    "lon": -106.7662952,
+    "display_name": "Steamboat Ski Resort, Little Kit Lane, Routt County, Colorado, 80477, United States"
+  },
+  "Aspen Snowmass, Colorado": {
+    "lat": 39.1857183,
+    "lon": -106.9448525,
+    "display_name": "Aspen Snowmass, Snowmass Village, Pitkin County, Colorado, United States"
+  },
+  "Eldora Mountain Resort, Colorado": {
+    "lat": 39.9372535,
+    "lon": -105.5839741,
+    "display_name": "Eldora Mountain Resort, Eldora Ski Road, Boulder County, Colorado, 80474, United States"
+  },
+  "Loveland Ski Area, Colorado": {
+    "lat": 39.6783252,
+    "lon": -105.9105051,
+    "display_name": "Loveland Basin Ski Area, Clear Creek County, Colorado, United States"
+  },
+  "Wolf Creek Ski Area, Colorado": {
+    "lat": 37.4647315,
+    "lon": -106.7865004,
+    "display_name": "Wolf Creek Ski Area, Mineral County, Colorado, United States"
+  },
+  "Monarch Mountain, Colorado": {
+    "lat": 38.5138785,
+    "lon": -106.3441259,
+    "display_name": "Monarch Mountain, Chaffee County, Colorado, United States"
+  },
+  "Park City Mountain Resort, Utah": {
+    "lat": 40.654146,
+    "lon": -111.562396,
+    "display_name": "Park City Mountain Resort, Summit County, Utah, 84068, United States"
+  },
+  "Deer Valley Resort, Utah": {
+    "lat": 40.6121609,
+    "lon": -111.4823197,
+    "display_name": "Deer Valley Resort, Wasatch County, Utah, 84055, United States"
+  },
+  "Alta Ski Area, Utah": {
+    "lat": 40.5882366,
+    "lon": -111.638401,
+    "display_name": "Alta Ski Area, Peruvian Acre Road, Alta, Salt Lake County, Utah, 85092, United States"
+  },
+  "Snowbird, Utah": {
+    "lat": 40.5807546,
+    "lon": -111.6572955,
+    "display_name": "Snowbird, Salt Lake County, Utah, 85092, United States"
+  },
+  "Brighton Ski Resort, Utah": {
+    "lat": 40.5979914,
+    "lon": -111.583719,
+    "display_name": "Brighton Ski Resort, 12601, Brighton Lakes Trail, Brighton, Salt Lake County, Utah, 84121, United States"
+  },
+  "Solitude Mountain Resort, Utah": {
+    "lat": 40.6231058,
+    "lon": -111.59763,
+    "display_name": "Solitude Mountain Resort, Up & Away, Solitude, Brighton, Salt Lake County, Utah, 85092, United States"
+  },
+  "Snowbasin Resort, Utah": {
+    "lat": 41.2003657,
+    "lon": -111.8652518,
+    "display_name": "Snowbasin Resort, Malans Basin Trail, Weber County, Utah, 84408, United States"
+  },
+  "Sundance Mountain Resort, Utah": {
+    "lat": 40.390898,
+    "lon": -111.577661,
+    "display_name": "Sundance Mountain Resort, Novice Trail, Utah County, Utah, United States"
+  }
+}
