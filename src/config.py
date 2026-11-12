@@ -15,6 +15,7 @@ CACHE_DIR = DATA_DIR / "cache"
 RESORTS_CSV = DATA_DIR / "resorts.csv"
 GEOCODE_CACHE = CACHE_DIR / "geocodes.json"
 ELEVATION_CACHE = CACHE_DIR / "elevation.json"
+HISTORY_CACHE = CACHE_DIR / "history.csv"
 
 # --- HTTP ------------------------------------------------------------------
 
@@ -42,3 +43,16 @@ ELEVATION_URL = "https://api.open-meteo.com/v1/elevation"
 # Every resort in the seed file has a base above this. A geocoded point
 # below it probably landed in a valley town instead of at the resort.
 MIN_RESORT_ELEVATION_M = 1800
+
+HISTORY_URL = "https://archive-api.open-meteo.com/v1/archive"
+TIMEZONE = "America/Denver"
+DAILY_VARIABLES = ["snowfall_sum", "temperature_2m_max", "temperature_2m_min"]
+
+# Ski seasons are named by the year they start: season 2016 = Oct 2016 to May 2017.
+# Only ski months are fetched, which keeps us under Open-Meteo's free-tier
+# limit (each 2 weeks of data per location counts as one API call).
+FIRST_SEASON = 2016
+LAST_SEASON = 2025
+SEASON_START = "10-01"  # Oct 1
+SEASON_END = "05-31"    # May 31 of the following year
+HISTORY_DELAY_SECONDS = 3  # pause between requests to stay under 600 calls/minute
